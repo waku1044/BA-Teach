@@ -108,6 +108,11 @@ a {
   font-weight: bolder;
   font-size: large;
 }
+li>a:hover{
+  background: #0c9422;
+  padding: .5rem;
+  border-radius: 30px;
+}
 
 /* index */
 
