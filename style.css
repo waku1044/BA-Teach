@@ -292,11 +292,13 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: end;
-    align-items: center;
+    /* justify-content: top; */
+    /* align-items: center; */
   }
   .menu{
     display: block;
+    margin-top:0px ;
+  position: relative;
   }
   .section_reseña {
     grid-template-columns: repeat(2, 1fr);
