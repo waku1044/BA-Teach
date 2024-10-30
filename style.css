@@ -6,7 +6,7 @@
 /* Header */
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-image: url(./assets/img/splinter.jpg);
   background-repeat: repeat-x;
