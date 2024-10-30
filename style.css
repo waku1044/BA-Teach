@@ -11,7 +11,7 @@ header {
   background-image: url(./assets/img/splinter.jpg);
   background-repeat: repeat-x;
   background-position: top;
-  background-size:45% ;
+  background-size: 45%;
   padding: 10px;
   padding-right: 50px;
   border-radius: 0px 0px 50px 50px;
@@ -19,7 +19,7 @@ header {
 body {
   background-image: url(./assets/img/header.jpg);
 }
-.pared{
+.pared {
   background-image: url(./assets/img/pared.jpg);
   padding: 35px 10px 3px 10px;
   border-radius: 30px;
@@ -34,7 +34,6 @@ body {
   padding: 0.8%;
   gap: 0.5rem;
   border: none;
-  
 }
 .btn_menu:hover {
   border-radius: 10px;
@@ -61,17 +60,21 @@ body {
   border: none;
   border-radius: 20px;
 }
-.menu{
+.menu {
   display: none;
-  margin-top:200px ;
+  top: 100px;
+  right: 100px;
   position: relative;
+  background-color: rgba(172, 89, 30, 0.685);
+  padding: 1rem;
+  border-radius: 20px;
 }
 .logo {
   width: auto;
   height: 5rem;
   border-radius: 50%;
-  box-shadow: 0px -28px 15px black, 0px 8px 5px black,8px 0px 5px black,-8px 0px 5px black ;
-  
+  box-shadow: 0px -28px 15px black, 0px 8px 5px black, 8px 0px 5px black,
+    -8px 0px 5px black;
 }
 h1 {
   font-family: "Playfair Display", serif;
@@ -108,9 +111,9 @@ a {
   font-weight: bolder;
   font-size: large;
 }
-li>a:hover{
+li > a:hover {
   background: #0c9422;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 30px;
 }
 
@@ -126,9 +129,8 @@ li>a:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
-.card_producto{
+.card_producto {
   width: 14rem;
   height: 20rem;
 }
@@ -140,7 +142,7 @@ li>a:hover{
   grid-template-columns: 1fr;
   margin: auto;
   background-image: url(./assets/img/nav.png);
-  background-position:center;
+  background-position: center;
 }
 
 .card {
@@ -157,7 +159,7 @@ li>a:hover{
   background-color: rgb(235, 217, 199);
   border-radius: 0 0 20px 20px;
   padding: 0 1rem 1rem 1rem;
-  margin-top: -10px;  
+  margin-top: -10px;
 }
 .card-body > h5 {
   font-size: 1.5rem;
@@ -256,14 +258,14 @@ textarea {
 footer {
   background-color: rgb(0, 0, 0);
   margin: 0 2% 0 2%;
-  padding: 5% 5% ;
+  padding: 5% 5%;
   color: azure;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.logo_footer{
+.logo_footer {
   width: 50%;
   /* height: 20px; */
   border-radius: 100%;
@@ -272,7 +274,7 @@ footer {
   font-family: "Playfair Display", serif;
   text-shadow: #babbb3 5px 5px 3px;
   font-weight: bolder;
-  
+
   align-self: center;
   color: #dee041;
   visibility: hidden;
@@ -287,10 +289,10 @@ footer {
   h1 {
     visibility: visible;
   }
-  header{
+  header {
     justify-content: space-around;
   }
-  .btn_menu{
+  .btn_menu {
     visibility: hidden;
   }
   nav > ul {
@@ -300,10 +302,13 @@ footer {
     /* justify-content: top; */
     /* align-items: center; */
   }
-  .menu{
+  .menu {
     display: block;
-    margin-top:0px ;
-  position: relative;
+    
+    position: static;
+    background-color: rgba(172, 89, 30, 0.685);
+    /* padding: 1rem; */
+    /* border-radius: 20px; */
   }
   .section_reseña {
     grid-template-columns: repeat(2, 1fr);
@@ -313,12 +318,12 @@ footer {
   .form {
     width: 50%;
   }
-  footer{
+  footer {
     flex-direction: row;
     align-items: center;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     align-self: center;
     height: 20px;
-    padding: 5% 5% ;
+    padding: 5% 5%;
   }
 }
