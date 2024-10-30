@@ -5,7 +5,7 @@ const $raya2 = document.querySelector('.raya2');
 const $raya3 = document.querySelector('.raya3');
 const $listaA = document.querySelector('li a');
 
-$menu.style.display = 'none'; // Oculta el menú
+ 
 $btn_menu.addEventListener('click', () => {
     if ($menu.style.display === 'flex' || $menu.style.display === '') {
         $menu.style.display = 'none';

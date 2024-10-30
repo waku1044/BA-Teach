@@ -63,7 +63,7 @@ body {
   border-radius: 20px;
 }
 .menu {
-  
+  display: none;
   top: 110px;
   right: 155px;
   position: relative;
