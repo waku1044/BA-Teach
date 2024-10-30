@@ -8,6 +8,7 @@ const $listaA = document.querySelector('li a');
 $menu.style.display = 'none'; // Oculta el menú
 $btn_menu.addEventListener('click', () => {
     if ($menu.style.display === 'flex' || $menu.style.display === '') {
+        $menu.style.display = 'none';
         $raya2.style.display = 'flex';
         $raya1.style.transform = 'rotate(0deg)';
         $raya3.style.transform = 'rotate(0deg)';
