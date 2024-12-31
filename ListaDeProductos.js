@@ -155,11 +155,52 @@ export const cardProductoReseña = (id, nombre, img, descripcion, precio) => {
   </div>`;
 
   article.innerHTML = template;
-
+  
   // Obtener las referencias a los elementos 'mas' y 'menos' dentro de la tarjeta
   const $mas = article.querySelector(".mas");
   const $menos = article.querySelector(".menos");
   const $cantidad = article.querySelector(".cantidad");
+  const $btn_agregar = article.querySelector(".btn_agregar");
+  const $cantidadPedidos = document.querySelector(".cantidadPedidos");
+
+  // Función para agregar el producto al carrito
+  $btn_agregar.addEventListener("click", () => {
+    let cantidad = parseInt($cantidad.textContent);
+
+    if (cantidad > 0) {
+      let producto = {
+        id: id,
+        nombre: nombre,
+        precio: precio,
+        cantidad: cantidad,
+      };
+
+      // Agregar el producto al carrito
+      agregarProducto(producto);
+
+      // Actualizar cantidad
+      actualizarCarrito();
+    }
+  });
+
+  // Función para agregar el producto al carrito
+  function agregarProducto(producto) {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    carrito.push(producto);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    alert("Producto agregado al carrito");
+    
+    actualizarCarrito();
+  }
+
+  // Actualizar cantidad
+  function actualizarCarrito() {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    $cantidadPedidos.textContent = carrito.length; 
+  }
+
+    
 
   // Función para aumentar la cantidad
   function agregarCantidad() {
@@ -181,3 +222,4 @@ export const cardProductoReseña = (id, nombre, img, descripcion, precio) => {
 
   return article;
 };
+

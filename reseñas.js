@@ -61,17 +61,22 @@ ProductosPorCategoria.postres.map((producto) => {
   );
 });
 
-function agregarCantidad() {
-  let actualizando = parseInt($cantidad.textContent);
-  $cantidad.textContent = actualizando + 1;
-}
+(function actualizarCarrito() {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    $cantidadPedidos.textContent = carrito.length; 
+    console.log(carrito);
+  })();
+// function agregarCantidad() {
+//   let actualizando = parseInt($cantidad.textContent);
+//   $cantidad.textContent = actualizando + 1;
+// }
 
-function sacarCantidad() {
-  let actualizando = parseInt($cantidad.textContent);
-  if (actualizando > 0) {
-    $cantidad.textContent = actualizando - 1;
-  }
-}
+// function sacarCantidad() {
+//   let actualizando = parseInt($cantidad.textContent);
+//   if (actualizando > 0) {
+//     $cantidad.textContent = actualizando - 1;
+//   }
+// }
 
-$mas.addEventListener("click", ()=>agregarCantidad);
+$mas.addEventListener("click", agregarCantidad);
 $menos.addEventListener("click", sacarCantidad);

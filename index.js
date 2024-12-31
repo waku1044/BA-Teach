@@ -5,6 +5,7 @@ const $raya2 = document.querySelector('.raya2');
 const $raya3 = document.querySelector('.raya3');
 const $listaA = document.querySelector('li a');
 const $fondo_section = document.querySelector('.fondo_section');
+const $cantidadPedidos = document.querySelector(".cantidadPedidos");
 
 import {ProductosPorCategoria, cardProducto, cardProductoReseña} from './ListaDeProductos.js'
 // const productos = ProductosPorCategoria;
@@ -53,7 +54,11 @@ $btn_menu.addEventListener('click', () => {
         $fondo_section.appendChild(cardProducto( producto.id,producto.nombre, producto.img))
     });
 
-    
+    (function actualizarCarrito() {
+        let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        $cantidadPedidos.textContent = carrito.length; 
+        console.log(carrito);
+      })();
 
 
 $listaA.addEventListener('click',()=>{
