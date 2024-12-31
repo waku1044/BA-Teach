@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 /* Header */
+.bi-cart-plus{
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  right: 40px;
+}
+.cantidadPedidos{
+  text-align: center;
+  width: 30px;
+  position: relative;
+  top: 35px;
+  right: 50px;
+  background-color: grey;
+  color: #dee041;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
 header {
   display: flex;
   justify-content: space-around;
@@ -64,6 +83,7 @@ body {
 }
 .menu {
   display: none;
+  padding: 1rem 2rem;
   top: 110px;
   right: 155px;
   position: relative;
@@ -111,6 +131,7 @@ li {
 }
 li,
 a {
+  
   text-decoration: none;
   list-style: none;
   font-weight: bolder;
@@ -122,15 +143,16 @@ a {
   text-decoration: none;
   list-style: none;
   font-weight: bolder;
-  font-size: large;
+  font-size: 1.5rem;
   padding: 0.3rem; /* Para darle más tamaño al enlace */
   display: inline-block; /* Necesario para el escalado */
   transition: transform 1s ease; /* Transición para el escalado */
 }
  a:hover {
   background: #0c9422;
-  transform: scale(1.5);
+  transform: scale(1.2);
   border-radius: 30px;
+  color: antiquewhite;
 }
 
 /* index */
@@ -147,7 +169,7 @@ a {
   flex-wrap: wrap;
 }
 .card_producto {
-  width: 14rem;
+  width: 16rem;
   height: 20rem;
 }
 
@@ -186,8 +208,62 @@ a {
   font-family: "Playfair Display", serif;
 }
 .card-text {
-  height: 10rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  /* height: 10rem; */
   overflow: auto;
+}
+.card-cuadro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cuadro{
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c7e3ee;
+  border-radius: 20px;
+  padding: 0.5rem;
+  
+}
+.menos{
+  position: relative;
+  left: -0.5rem;
+  cursor: pointer;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color:rgba(240, 42, 42, 0.815) ;
+  border-radius: 20px 0 0 20px; 
+}
+.mas{
+  position: relative;
+  left: 0.5rem;
+  cursor: pointer;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: #0c9422;
+  border-radius:0 20px 20px 0;
+}
+.btn_agregar{
+
+  background-color: #0c9422;  
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: rgb(238, 233, 233);
+  font-weight: bolder;
+  font-size: 1.5rem;
+
 }
 .giro {
   transform: scaleX(-1); /* Gira la imagen horizontalmente */
