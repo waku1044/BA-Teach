@@ -5,10 +5,13 @@
 }
 /* Header */
 .bi-cart-plus{
+  align-items: center;
   cursor: pointer;
   position: relative;
   top: 30px;
   right: 40px;
+  background-color: antiquewhite;
+  border-radius: 100%;
 }
 .cantidadPedidos{
   text-align: center;
@@ -379,6 +382,27 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .bi-cart-plus{
+    width: 5%;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    right: 40px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+  }
+  .cantidadPedidos{
+    text-align: center;
+    width: 30px;
+    position: relative;
+    top: 35px;
+    right: 50px;
+    background-color: grey;
+    color: #dee041;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding: 5px;
+  }
   h1 {
     visibility: visible;
   }

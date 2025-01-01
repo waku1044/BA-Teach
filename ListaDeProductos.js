@@ -190,7 +190,7 @@ export const cardProductoReseña = (id, nombre, img, descripcion, precio) => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     alert("Producto agregado al carrito");
-    
+    $cantidad.textContent = 0;
     actualizarCarrito();
   }
 
@@ -205,7 +205,11 @@ export const cardProductoReseña = (id, nombre, img, descripcion, precio) => {
   // Función para aumentar la cantidad
   function agregarCantidad() {
     let actualizando = parseInt($cantidad.textContent);
+    console.log(actualizando);
     $cantidad.textContent = actualizando + 1;
+    
+    
+    
   }
 
   // Función para disminuir la cantidad
