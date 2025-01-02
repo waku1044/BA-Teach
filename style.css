@@ -13,7 +13,13 @@
   background-color: antiquewhite;
   border-radius: 100%;
 }
-.cantidadPedidos{
+.bi-cart-plus:hover{
+  background: antiquewhite;
+  transform: none;
+  border-radius: 30px;
+  color: none;
+}
+  .cantidadPedidos{
   text-align: center;
   width: 30px;
   position: relative;

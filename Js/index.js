@@ -9,7 +9,7 @@ const $icon = document.querySelector('.bi-cart-plus');
 const $fondo_section = document.querySelector('.fondo_section');
 const $cantidadPedidos = document.querySelector(".cantidadPedidos");
 
-import {ProductosPorCategoria, cardProducto, cardProductoReseña} from './ListaDeProductos.js'
+import {ProductosPorCategoria, cardProducto, cardProductoReseña} from "./ListaDeProductos.js";
 // const productos = ProductosPorCategoria;
 
 
@@ -28,6 +28,8 @@ $btn_menu.addEventListener('click', () => {
         $cantidadPedidos.style.top = '35px';
     } else {
         $menu.style.display = 'flex'; // Muestra el menú
+        $menu.style.position = 'relative';
+        $menu.style.right = '230px';
         $raya2.style.display = 'none';
         $raya1.style.transform = 'rotate(45deg)';
         $raya3.style.transform = 'rotate(-45deg)';
